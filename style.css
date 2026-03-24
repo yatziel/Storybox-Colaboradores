@@ -1,0 +1,88 @@
+body {
+  background-color: rgb(14, 28, 43);
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+  font-family: 'Nombre de tu Fuente', sans-serif;
+  gap: 20px;
+}
+
+.profile-card {
+  background-color: 0D0D0D;
+  color: rgb(241, 241, 241);
+  width: 320px;
+  padding: 25px;
+  border: 2px solid #E1D2F9;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12pt;
+  color: #ffffff;
+  margin-bottom: 20px;
+
+}
+
+.image-container {
+  position: relative;
+  width: 150px;
+  margin: 0 auto 15px;
+  }
+
+  .profile-img {
+  width: 150px;
+  height: 150px;
+  border: 3px solid #E1D2F9;
+  border-radius: 50%;
+}
+
+.badge{
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  background-color: #e12103;
+  color: white;
+  padding: 8px 8px;
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.name {
+  margin: 10px 0 5px;
+  font-size: 24px;
+}
+
+.title {
+  color: aliceblue;
+  margin-bottom: 30px;
+}
+
+.descrip-section h3, .skills-section h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.descrip-section p{
+  font-size: 14px;
+  color: #ffffff;
+  line-height: 1.5;
+  margin-bottom: 25px;
+}
+
+.skills-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.skills-tag{
+  background-color: #E1D2F9;
+  color: #0D0D0D;
+  border-radius: 20px;
+
+}
