@@ -3,7 +3,7 @@ body {
   display: flex;
   justify-content: center;
   padding: 50px;
-  font-family: 'Nombre de tu Fuente', sans-serif;
+  font-family: 'Poppins', sans-serif;
   gap: 20px;
 }
 
@@ -59,6 +59,8 @@ body {
 .title {
   color: aliceblue;
   margin-bottom: 30px;
+  font-style: light;
+  font-size: 14px;
 }
 
 .descrip-section h3, .skills-section h3 {
@@ -86,3 +88,9 @@ body {
   border-radius: 20px;
 
 }
+
+.id-left, .id-right{
+  color: #ffffff;
+  font-size: 12px;
+}
+
