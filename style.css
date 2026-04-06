@@ -1,11 +1,17 @@
 body {
-  background-color: rgb(14, 28, 43);
-  display: flex;
+  background-color: rgb(11, 16, 22);
+  display: grid;
   justify-content: center;
-  padding: 50px;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
   font-family: 'Poppins', sans-serif;
   gap: 20px;
 }
+
+
 
 .profile-card {
   background-color: 0D0D0D;
@@ -13,6 +19,16 @@ body {
   width: 320px;
   padding: 25px;
   border: 2px solid #E1D2F9;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.profile-card-cgi {
+  background-color: 0D0D0D;
+  color: rgb(241, 241, 241);
+  width: 320px;
+  padding: 25px;
+  border: 2px solid #e6b8d9;
   border-radius: 20px;
   text-align: center;
 }
@@ -37,23 +53,45 @@ body {
   height: 150px;
   border: 3px solid #E1D2F9;
   border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.profile-img-cgi {
+  width: 150px;
+  height: 150px;
+  border: 3px solid #ffd4f4;
+  border-radius: 50%;
 }
 
 .badge{
   position: absolute;
   bottom: 5px;
   right: 5px;
-  background-color: #e12103;
+  background-color: #D99AC8;
   color: white;
   padding: 8px 8px;
   border-radius: 50%;
-  font-size: 12px;
-  font-weight: bold;
+  font-size: 14px;
+  font-weight: medium;
+}
+
+.badge-others{
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  background-color: #F25050;
+  color: white;
+  padding: 8px 8px;
+  border-radius: 50%;
+  font-size: 14px;
+  font-weight: medium;
 }
 
 .name {
   margin: 10px 0 5px;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 .title {
@@ -69,7 +107,8 @@ body {
 }
 
 .descrip-section p{
-  font-size: 14px;
+  font-size: 12px;
+  font-style: medium;
   color: #ffffff;
   line-height: 1.5;
   margin-bottom: 25px;
@@ -79,14 +118,32 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 8px;  
+  margin-bottom: 10px;
 }
 
 .skills-tag{
+  display: inline-block;
+  white-space: nowrap;
+
   background-color: #E1D2F9;
   color: #0D0D0D;
-  border-radius: 20px;
+  border-radius: 8px;
+  padding: 5px 5px;
+  font-size: 12px;
+  font-weight: medium;
 
+  overflow: visible;
+}
+
+.skills-tag-cgi{
+  background-color: #f9d2f0;
+  color: #0D0D0D;
+  border-radius: 8px;
+  padding: 8px 5px;
+  font-size: 12px;
+  font-weight: medium;
+  text-align: center;
 }
 
 .id-left, .id-right{
