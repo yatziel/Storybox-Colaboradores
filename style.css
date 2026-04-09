@@ -11,26 +11,43 @@ body {
   gap: 20px;
 }
 
-
+.card {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur (10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
 
 .profile-card {
-  background-color: 0D0D0D;
+  background-color: #18191D;
   color: rgb(241, 241, 241);
   width: 320px;
   padding: 25px;
   border: 2px solid #E1D2F9;
   border-radius: 20px;
   text-align: center;
+  transition: transform 0.3 ease, box shadow o.3s ease;
+  cursor: pointer;
 }
-
+.profile-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 24 rgba(0, 0, 0, 2);
+}
+.profile-card-cgi:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 24 rgba(0, 0, 0, 2);
+}
 .profile-card-cgi {
-  background-color: 0D0D0D;
+  background-color: #18191D;
   color: rgb(241, 241, 241);
   width: 320px;
   padding: 25px;
   border: 2px solid #e6b8d9;
   border-radius: 20px;
   text-align: center;
+  text-align: center;
+  transition: transform 0.3 ease, box shadow o.3s ease;
+  cursor: pointer;
 }
 
 .card-header {
@@ -63,6 +80,9 @@ body {
   height: 150px;
   border: 3px solid #ffd4f4;
   border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
 }
 
 .badge{
