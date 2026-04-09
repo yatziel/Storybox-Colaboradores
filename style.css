@@ -11,12 +11,12 @@ body {
   gap: 20px;
 }
 
-.card {
+/*.card {
   background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur (10px);
   -webkit-backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.1);
-}
+}*/
 
 .profile-card {
   background-color: #18191D;
@@ -26,16 +26,19 @@ body {
   border: 2px solid #E1D2F9;
   border-radius: 20px;
   text-align: center;
-  transition: transform 0.3 ease, box shadow o.3s ease;
+  transform: scale(1);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  backface-visibility: hidden;
   cursor: pointer;
 }
 .profile-card:hover {
+  background-color: rgba(42, 39, 211, 0.685);
   transform: scale(1.05);
-  box-shadow: 0 12px 24 rgba(0, 0, 0, 2);
+  /*box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);*/
 }
 .profile-card-cgi:hover {
-  transform: scale(1.05);
-  box-shadow: 0 12px 24 rgba(0, 0, 0, 2);
+  background-color: rgba(237, 93, 213, 0.923);
+  transform: scale(1.05)
 }
 .profile-card-cgi {
   background-color: #18191D;
@@ -45,10 +48,11 @@ body {
   border: 2px solid #e6b8d9;
   border-radius: 20px;
   text-align: center;
-  text-align: center;
-  transition: transform 0.3 ease, box shadow o.3s ease;
+  transform: scale(1);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  backface-visibility: hidden;
   cursor: pointer;
-}
+  }
 
 .card-header {
   display: flex;
@@ -149,7 +153,7 @@ body {
   background-color: #E1D2F9;
   color: #0D0D0D;
   border-radius: 8px;
-  padding: 5px 5px;
+  padding: 4px 12px;
   font-size: 12px;
   font-weight: medium;
 
