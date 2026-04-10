@@ -7,47 +7,75 @@ body {
 }
 
 .encabezado {
-  position: relative; 
   width: 100%;
-  padding: 60px 20px;
+ padding: 60px 20px;
+ color: #d4d4d4;
+ border-bottom: 1px solid rgba(255,255,255,0.1);
+ position: sticky;
+ top: 0;
+ z-index: 1000;
+ backdrop-filter: blur(15px);
+ -webkit-backdrop-filter: blur(15px);
+ display: flex;
+ justify-content: center;
+
+}
+
+.centro-header{
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #d4d4d4;
-  border-bottom: 1px solid rgba(255,255,255,0.1);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  backdrop-filter: blur(15px);
-  -webkit-backdrop-filter: blur(15px);
+  gap: 20px;
+  width: 100%;
+  min-width: 900px;
 }
-.encabezado {
-  
-  /* ... resto de tu diseño anterior ... */
+
+.textos-header {
+ display: flex;
+ flex-direction: column;
+ align-items: flex-start; 
+ width: 100%; 
+ gap: 10px; 
 }
 
 .logo-container {
-  position: absolute;
-  top: 30px;  /* Ajusta la distancia del borde superior */
-  left: 40px; /* Ajusta la distancia del borde izquierdo */
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 .logo-img {
-  height: 50px; /* Ajusta el tamaño de tu logo */
+  height: 80px; 
   width: auto;
   filter: drop-shadow(0 0 10px rgba(225, 210, 249, 0.3)); /* Brillo sutil */
   transition: transform 0.3s ease;
 }
 
 .logo-img:hover {
-  transform: rotate(-5deg) scale(1.1); /* Animación juguetona al pasar el mouse */
+  transform: rotate(-5deg) scale(1.1);
 }
 
-
-.titulo {
-  font-size: 46pt;
-  margin: 0;
+.nav-links{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
 }
+
+.nav-links a{
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.nav-links a:hover{
+  color: #c5e9ff;
+  background-color: #00659c;
+}
+
 
 .contenedor-colaboradores {
   display: grid;
@@ -59,12 +87,7 @@ body {
   margin: 0 auto;
 }
 
-/*.card {
-  background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur (10px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-}*/
+/* ====  cards  ====*/
 
 .profile-card {
   background-color: #18191D;
@@ -80,12 +103,12 @@ body {
   cursor: pointer;
 }
 .profile-card:hover {
-  background-color: rgba(42, 39, 211, 0.685);
+  background-color: #5F1DC9;
   transform: scale(1.05);
   /*box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);*/
 }
 .profile-card-cgi:hover {
-  background-color: rgba(237, 93, 213, 0.923);
+  background-color: #D21C93;
   transform: scale(1.05)
 }
 .profile-card-cgi {
